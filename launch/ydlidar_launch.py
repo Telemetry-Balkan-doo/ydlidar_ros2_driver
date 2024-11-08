@@ -27,10 +27,10 @@ import os
 
 def generate_launch_description():
     share_dir = get_package_share_directory('ydlidar_ros2_driver')
-    parameter_file = LaunchConfiguration('params_file')
+    parameter_file = LaunchConfiguration('params_file1')
     node_name = 'ydlidar_ros2_driver_node'
 
-    params_declare = DeclareLaunchArgument('params_file',
+    params_declare = DeclareLaunchArgument('params_file1',
                                            default_value=os.path.join(
                                                share_dir, 'params', 'ydlidar.yaml'),
                                            description='FPath to the ROS2 parameters file to use.')
